@@ -1,6 +1,5 @@
 class Scooter {
 static nextSerial = 1;
-
 constructor() {
   this.station = null;
   this.user = null;

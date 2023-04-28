@@ -11,7 +11,7 @@ class ScooterApp {
 
     }
     this.registeredUsers = {
-
+      
     }
   }
   
