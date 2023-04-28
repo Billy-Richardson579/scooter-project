@@ -2,8 +2,8 @@ const User = require('./User')
 const Scooter = require('./Scooter')
 
 class ScooterApp {
-  constructor(registeredUsers){
-    super()
+  constructor(username,password,age,scooter,user,station,serial,loggedIn){
+    super(username,password,age,scooter,user,station,serial,loggedIn)
     this.stations = {
       station1: [],
       station2: [],
@@ -11,7 +11,6 @@ class ScooterApp {
 
     }
     this.registeredUsers = {
-      
     }
   }
   
