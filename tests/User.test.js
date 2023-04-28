@@ -4,7 +4,7 @@ describe('User', () => {
     let user;
     
     beforeEach(() => {
-      user = new User('john_doe', 'password123', 30);
+      user = new User('dave', 'password123', 30);
     });
     
     describe('#login', () => {
@@ -14,7 +14,7 @@ describe('User', () => {
       });
       
       test('should throw an error if the password is incorrect', () => {
-        expect(() => {user.login('wrong_password')}).toThrow('Incorrect password');
+        expect(() => {user.login('password')}).toThrow('Incorrect password');
         expect(user.loggedIn).toBe(false);
       });
     });
